@@ -1,5 +1,5 @@
 
-# TargetAsync
+# TargetConcurrency
 run FAKE Targets with hard dependencies using concurrency to speed execution.
 
 `
@@ -7,7 +7,7 @@ open Bedu
 `
 
 `
-open TargetsAsync
+open TargetsConcurrency
 `
 
 `
