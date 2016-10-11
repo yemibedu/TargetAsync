@@ -6,6 +6,8 @@ run FAKE Targets using concurrency to speed up execution.
 This library does route finding and path optimization to enable the grouping of targets that can run in parallel.
 
 `
+#r "./lib/Bedu.TargetConcurrency.dll"
+`
 open Bedu
 `
 
