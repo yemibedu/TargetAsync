@@ -1,5 +1,5 @@
 
-# TargetConcurrency
+# TargetsConcurrency
 
 run FAKE Targets using concurrency to speed up execution.
 
