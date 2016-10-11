@@ -62,3 +62,11 @@ E , G
 \/
 
 H
+
+# Known Issues
+1) Since this is external to the actual F# Fake Library, it can not directly access *changeExitCodeIfErrorOccured()*
+
+# See Also
+1) [FAKE - F# Make - A DSL for build tasks](http://fsharp.github.io/FAKE/)
+
+2) [Parallel Target JIT?](https://github.com/fsharp/FAKE/issues/1395) for the problem this is trying to solve.
