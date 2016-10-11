@@ -1,0 +1,61 @@
+
+# TargetAsync
+run FAKE Targets with hard dependencies using concurrency to speed execution.
+
+`
+open Bedu
+`
+
+`
+open TargetsAsync
+`
+
+`
+Target "_A" DoNothing ; Target "_B" DoNothing ; Target "_C" DoNothing
+`
+
+`
+Target "_D" DoNothing ; Target "_E" DoNothing ; Target "_F" DoNothing
+`
+
+`
+Target "_G" DoNothing ; Target "_H" DoNothing
+`
+
+`
+"_A" ==> "_B" ; "_A" ==> "_C"
+`
+
+`
+"_B" ==> "_D" ; "_C" ==> "_D"
+`
+
+`
+"_D" ==> "_E" ; "_D" ?=> "_G" ; "_F" ?=> "_G"
+`
+
+`
+"_E" ==> "_H" ; "_G" ==> "_H"
+`
+
+`
+runTargetAsync "_H"
+`
+
+A
+
+/\
+
+B , C
+
+\/
+
+D | F
+
+/\? /?
+
+E , G
+
+\/
+
+H
