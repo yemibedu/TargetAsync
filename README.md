@@ -1,4 +1,3 @@
-
 # TargetConcurrency
 run FAKE Targets with hard dependencies using concurrency to speed execution.
 
@@ -39,7 +38,7 @@ Target "_G" DoNothing ; Target "_H" DoNothing
 `
 
 `
-runTargetAsync "_H"
+runTargetConcurrent "_H"
 `
 
 A
