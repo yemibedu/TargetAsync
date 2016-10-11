@@ -1,5 +1,5 @@
 
-# TargetsConcurrency
+# Target Concurrency
 
 run FAKE Targets using concurrency to speed up execution.
 
@@ -10,7 +10,7 @@ open Bedu
 `
 
 `
-open TargetsConcurrency
+open TargetConcurrency
 `
 
 `
